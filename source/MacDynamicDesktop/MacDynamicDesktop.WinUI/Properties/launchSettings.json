@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MacDynamicDesktop.WinUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "MacDynamicDesktop.WinUI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
