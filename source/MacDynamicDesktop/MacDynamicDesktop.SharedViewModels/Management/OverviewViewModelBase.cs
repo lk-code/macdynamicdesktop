@@ -1,30 +1,34 @@
+using System;
 using System.Collections.ObjectModel;
+using System.Threading;
+using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Extensions.Configuration;
 
-namespace MacDynamicDesktop.SharedViewModels.Management;
-
-public abstract partial class OverviewViewModelBase : ObservableObject
+namespace MacDynamicDesktop.SharedViewModels.Management
 {
-    private readonly IConfiguration _configuration;
-
-    [ObservableProperty]
-    ObservableCollection<WallpaperArchiveViewModel> _wallpaperCollection = new();
-    
-    protected OverviewViewModelBase(IConfiguration configuration)
+    public abstract partial class OverviewViewModelBase : ObservableObject
     {
-        _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
-    }
+        private readonly IConfiguration _configuration;
 
-    [RelayCommand]
-    public async Task OnViewAppearingAsync(CancellationToken cancellationToken)
-    {
-        // TODO: load
-        this.WallpaperCollection.Clear();
-        
-        this.WallpaperCollection.Add(new ("Windows 11", "/path/to/image"));
-        this.WallpaperCollection.Add(new ("Windows 10", "/path/to/image"));
-        this.WallpaperCollection.Add(new ("macOS", "/path/to/image"));
+        [ObservableProperty]
+        ObservableCollection<WallpaperArchiveViewModel> _wallpaperCollection = new ObservableCollection<WallpaperArchiveViewModel>();
+
+        protected OverviewViewModelBase(IConfiguration configuration)
+        {
+            _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
+        }
+
+        [RelayCommand]
+        public async Task OnViewAppearingAsync(CancellationToken cancellationToken)
+        {
+            // TODO: load
+            this.WallpaperCollection.Clear();
+
+            this.WallpaperCollection.Add(new WallpaperArchiveViewModel("Windows 11", "/path/to/image"));
+            this.WallpaperCollection.Add(new WallpaperArchiveViewModel("Windows 10", "/path/to/image"));
+            this.WallpaperCollection.Add(new WallpaperArchiveViewModel("macOS", "/path/to/image"));
+        }
     }
 }

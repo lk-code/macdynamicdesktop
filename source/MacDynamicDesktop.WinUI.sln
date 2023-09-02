@@ -7,11 +7,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacDynamicDesktop.Uwp", "Ma
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MacDynamicDesktop.Shared", "MacDynamicDesktop\MacDynamicDesktop.Shared\MacDynamicDesktop.Shared.shproj", "{6279C845-92F8-4333-AB99-3D213163593C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacDynamicDesktop.SharedViewModels", "MacDynamicDesktop\MacDynamicDesktop.SharedViewModels\MacDynamicDesktop.SharedViewModels.csproj", "{53DC2AEC-4C61-4FFC-AD14-42DF4390FE39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacDynamicDesktop.SharedViewModels", "MacDynamicDesktop\MacDynamicDesktop.SharedViewModels\MacDynamicDesktop.SharedViewModels.csproj", "{53DC2AEC-4C61-4FFC-AD14-42DF4390FE39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacDynamicDesktop.Core", "MacDynamicDesktop\MacDynamicDesktop.Core\MacDynamicDesktop.Core.csproj", "{83977888-E819-41A6-83FB-A560FAB59FB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacDynamicDesktop.Core", "MacDynamicDesktop\MacDynamicDesktop.Core\MacDynamicDesktop.Core.csproj", "{83977888-E819-41A6-83FB-A560FAB59FB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacDynamicDesktop.WinUI", "MacDynamicDesktop\MacDynamicDesktop.WinUI\MacDynamicDesktop.WinUI.csproj", "{DB5A184B-BB1B-4295-8015-74863A236E98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacDynamicDesktop.WinUI", "MacDynamicDesktop\MacDynamicDesktop.WinUI\MacDynamicDesktop.WinUI.csproj", "{DB5A184B-BB1B-4295-8015-74863A236E98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacDynamicDesktop.Uwp.Core", "MacDynamicDesktop\MacDynamicDesktop.Uwp.Core\MacDynamicDesktop.Uwp.Core.csproj", "{A4D9433D-2478-4FE8-908C-42109F881B23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacDynamicDesktop.Uwp.SharedViewModels", "MacDynamicDesktop\MacDynamicDesktop.Uwp.SharedViewModels\MacDynamicDesktop.Uwp.SharedViewModels.csproj", "{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -127,6 +131,46 @@ Global
 		{DB5A184B-BB1B-4295-8015-74863A236E98}.Release|x86.ActiveCfg = Release|x86
 		{DB5A184B-BB1B-4295-8015-74863A236E98}.Release|x86.Build.0 = Release|x86
 		{DB5A184B-BB1B-4295-8015-74863A236E98}.Release|x86.Deploy.0 = Release|x86
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Debug|ARM.Build.0 = Debug|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Debug|x64.Build.0 = Debug|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Debug|x86.Build.0 = Debug|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Release|ARM.Build.0 = Release|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Release|ARM64.Build.0 = Release|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Release|x64.ActiveCfg = Release|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Release|x64.Build.0 = Release|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Release|x86.ActiveCfg = Release|Any CPU
+		{A4D9433D-2478-4FE8-908C-42109F881B23}.Release|x86.Build.0 = Release|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Debug|ARM.Build.0 = Debug|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Debug|x64.Build.0 = Debug|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Debug|x86.Build.0 = Debug|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Release|ARM.ActiveCfg = Release|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Release|ARM.Build.0 = Release|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Release|ARM64.Build.0 = Release|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Release|x64.ActiveCfg = Release|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Release|x64.Build.0 = Release|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Release|x86.ActiveCfg = Release|Any CPU
+		{535E5ADF-554C-489B-ACF2-9454BB5BC5C8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
