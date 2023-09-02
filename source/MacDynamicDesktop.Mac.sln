@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacDynamicDesktop.Mobile", 
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MacDynamicDesktop.Shared", "MacDynamicDesktop\MacDynamicDesktop.Shared\MacDynamicDesktop.Shared.shproj", "{6279C845-92F8-4333-AB99-3D213163593C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacDynamicDesktop.Core", "MacDynamicDesktop\MacDynamicDesktop.Core\MacDynamicDesktop.Core.csproj", "{ECB53299-5AC1-4C46-A6E3-3CA8A4525E88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacDynamicDesktop.SharedViewModels", "MacDynamicDesktop\MacDynamicDesktop.SharedViewModels\MacDynamicDesktop.SharedViewModels.csproj", "{F8CFC7BD-297E-4FCE-B5CC-8303776D5904}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,5 +25,13 @@ Global
 		{D0F55E58-3F7D-447B-AD6F-632BA2554073}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0F55E58-3F7D-447B-AD6F-632BA2554073}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0F55E58-3F7D-447B-AD6F-632BA2554073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECB53299-5AC1-4C46-A6E3-3CA8A4525E88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB53299-5AC1-4C46-A6E3-3CA8A4525E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB53299-5AC1-4C46-A6E3-3CA8A4525E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB53299-5AC1-4C46-A6E3-3CA8A4525E88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8CFC7BD-297E-4FCE-B5CC-8303776D5904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8CFC7BD-297E-4FCE-B5CC-8303776D5904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8CFC7BD-297E-4FCE-B5CC-8303776D5904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8CFC7BD-297E-4FCE-B5CC-8303776D5904}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
