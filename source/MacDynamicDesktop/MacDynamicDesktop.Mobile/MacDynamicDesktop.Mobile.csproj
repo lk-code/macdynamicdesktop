@@ -40,6 +40,8 @@
                 <MtouchExtraArgs>$(MtouchExtraArgs) --marshal-objectivec-exceptions:disable</MtouchExtraArgs>
                 <!-- Full globalization is required for Uno -->
                 <InvariantGlobalization>false</InvariantGlobalization>
+                <!-- If this is not set on Release, the app crashes -->
+                <MtouchExtraArgs Condition="'$(Configuration)'=='Release'">$(MtouchExtraArgs) --optimize=-remove-dynamic-registrar</MtouchExtraArgs>
             </PropertyGroup>
             <ItemGroup>
                 <PackageReference Include="Uno.Extensions.Logging.OSLog" Version="1.4.0" />
