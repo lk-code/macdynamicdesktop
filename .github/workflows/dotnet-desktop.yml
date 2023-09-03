@@ -22,7 +22,7 @@ jobs:
         fetch-depth: 0
         
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore source/MacDynamicDesktop.Mac.sln
       
     - name: Version Visual Studio SDK projects
       uses: roryprimrose/set-vs-sdk-project-version@v1.0.3
@@ -43,7 +43,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
       shell: pwsh
       run: |
-        dotnet build --configuration Release --no-restore
+        dotnet build source/MacDynamicDesktop.Mac.sln --configuration Release --no-restore
         
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v3.1.2
