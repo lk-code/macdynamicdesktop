@@ -41,15 +41,10 @@ jobs:
         # Maps to the InformationalVersion element
         informationalVersion: 1.0.${{ github.run_number }}
       
-    - name: Build
-      shell: pwsh
-      run: |
-        dotnet build source/MacDynamicDesktop.Mac.sln --configuration Release --no-restore
-      
     - name: Publish
       shell: pwsh
       run: |
-        dotnet publish source/MacDynamicDesktop.Mac.sln -f net7.0-maccatalyst -c Release --no-restore -p:CreatePackage=false
+        dotnet publish source/MacDynamicDesktop/MacDynamicDesktop.Mobile/MacDynamicDesktop.Mobile.csproj -c Release -f net7.0-maccatalyst --no-restore -p:BuildIpa=True
         
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v3.1.2
