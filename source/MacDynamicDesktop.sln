@@ -1,10 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacDynamicDesktop.Mobile", "MacDynamicDesktop\MacDynamicDesktop.Mobile\MacDynamicDesktop.Mobile.csproj", "{46737651-7373-4C90-A39C-86AFD844EFE1}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacDynamicDesktop.Mobile", "MacDynamicDesktop\MacDynamicDesktop.Mobile\MacDynamicDesktop.Mobile.csproj", "{46737651-7373-4C90-A39C-86AFD844EFE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacDynamicDesktop.Windows", "MacDynamicDesktop\MacDynamicDesktop.Windows\MacDynamicDesktop.Windows.csproj", "{2020445D-4EA7-43EA-AA9C-8D3B19A44223}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacDynamicDesktop.Windows", "MacDynamicDesktop\MacDynamicDesktop.Windows\MacDynamicDesktop.Windows.csproj", "{2020445D-4EA7-43EA-AA9C-8D3B19A44223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacDynamicDesktop", "MacDynamicDesktop\MacDynamicDesktop\MacDynamicDesktop.csproj", "{AF8FBDD9-AB3B-43D2-8205-D89D06991F87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacDynamicDesktop", "MacDynamicDesktop\MacDynamicDesktop\MacDynamicDesktop.csproj", "{AF8FBDD9-AB3B-43D2-8205-D89D06991F87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{12E6C862-A1FC-410E-89B7-C80DD0CB142D}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,5 +84,8 @@ Global
 		{AF8FBDD9-AB3B-43D2-8205-D89D06991F87}.Release|x64.Build.0 = Release|Any CPU
 		{AF8FBDD9-AB3B-43D2-8205-D89D06991F87}.Release|x86.ActiveCfg = Release|Any CPU
 		{AF8FBDD9-AB3B-43D2-8205-D89D06991F87}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
