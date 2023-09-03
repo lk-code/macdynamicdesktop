@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "MacDynamicDesktop.Windows": {
+      "commandName": "MsixPackage"
+    }
+  }
+}

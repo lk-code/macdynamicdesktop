@@ -1,14 +1,18 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFrameworks>net7.0-maccatalyst</TargetFrameworks>
-        <!-- Disabled because of https://github.com/xamarin/xamarin-macios/issues/16401-->
-        <!-- <TargetFrameworks>$(TargetFrameworks);net7.0-macos</TargetFrameworks> -->
+    </PropertyGroup>
+    <PropertyGroup>
         <SingleProject>true</SingleProject>
         <OutputType>Exe</OutputType>
-        <!-- Debugger workaround https://github.com/dotnet/maui-samples/blob/8aa6b8780b12e97b157514c3bdc54bb4a13001cd/HelloMacCatalyst/HelloMacCatalyst.csproj#L7 -->
-        <!-- <MtouchExtraArgs Condition="'$(TargetFramework)' == 'net7.0-maccatalyst'">$(MtouchExtraArgs) -setenv:MONO_THREADS_SUSPEND=preemptive</MtouchExtraArgs> -->
-        <!-- Required for C# Hot Reload, except for macOS which uses CoreCLR (not Mono) -->
-        <UseInterpreter Condition="'$(Configuration)' == 'Debug' and '$(TargetFramework)' != 'net7.0-maccatalyst' and '$(TargetFramework)' != 'net7.0-macos'">True</UseInterpreter>
+        <!-- Display name -->
+        <ApplicationTitle>MacDynamicDesktop</ApplicationTitle>
+        <!-- App Identifier -->
+        <ApplicationId>dev.lk-code.MacDynamicDesktop</ApplicationId>
+        <ApplicationIdGuid>673AF5E9-D523-4A38-B0E9-D701DD5E61B2</ApplicationIdGuid>
+        <!-- Versions -->
+        <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+        <ApplicationVersion>1</ApplicationVersion>
         <IsUnoHead>true</IsUnoHead>
         <SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net7.0-maccatalyst'">14.0</SupportedOSPlatformVersion>
         <SupportedOSPlatformVersion Condition="'$(TargetFramework)'=='net7.0-macos'">10.14</SupportedOSPlatformVersion>
@@ -19,14 +23,11 @@
         <RuntimeIdentifier Condition="'$(TargetFramework)' == 'net7.0-macos'">osx-x64</RuntimeIdentifier>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Uno.UI" Version="4.9.17"/>
-        <PackageReference Include="Uno.UI.RemoteControl" Version="4.9.17" Condition="'$(Configuration)'=='Debug'"/>
-        <PackageReference Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="4.9.17"/>
+        <PackageReference Include="Uno.WinUI" Version="4.7.56"/>
+        <PackageReference Include="Uno.WinUI.RemoteControl" Version="4.7.56" Condition="'$(Configuration)'=='Debug'"/>
+        <PackageReference Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="4.7.56"/>
         <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="5.0.0"/>
-    </ItemGroup>
-    <ItemGroup>
-      <ProjectReference Include="..\MacDynamicDesktop.Core\MacDynamicDesktop.Core.csproj" />
-      <ProjectReference Include="..\MacDynamicDesktop.SharedViewModels\MacDynamicDesktop.SharedViewModels.csproj" />
+        <PackageReference Include="Uno.WinUI.Lottie" Version="4.7.56"/>
     </ItemGroup>
     <Choose>
         <When Condition="'$(TargetFramework)'=='net7.0-maccatalyst'">
@@ -44,11 +45,10 @@
                 <PackageReference Include="Uno.Extensions.Logging.OSLog" Version="1.4.0"/>
             </ItemGroup>
         </When>
-        <When Condition="'$(TargetFramework)'=='net7.0-macos'">
-            <PropertyGroup>
-                <TrimMode Condition="'$(Configuration)'=='Release'">link</TrimMode>
-            </PropertyGroup>
-        </When>
+
     </Choose>
-    <Import Project="..\MacDynamicDesktop.Shared\MacDynamicDesktop.Shared.projitems" Label="Shared"/>
+    <ItemGroup>
+        <ProjectReference Include="..\MacDynamicDesktop\MacDynamicDesktop.csproj"/>
+    </ItemGroup>
+    <Import Project="..\MacDynamicDesktop.Base\base.props"/>
 </Project>
