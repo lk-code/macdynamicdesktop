@@ -41,9 +41,12 @@ jobs:
         # Maps to the InformationalVersion element
         informationalVersion: 1.0.${{ github.run_number }}
       
-    - name: Build and analyze
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+    - name: Build
+      shell: pwsh
+      run: |
+        dotnet build source/MacDynamicDesktop.Mac.sln --configuration Release --no-restore
+      
+    - name: Publish
       shell: pwsh
       run: |
         dotnet publish source/MacDynamicDesktop.Mac.sln -f net7.0-maccatalyst -c Release -p:CreatePackage=false
