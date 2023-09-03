@@ -1,0 +1,16 @@
+{
+  "solution": {
+    "path": "MacDynamicDesktop.sln",
+    "projects": [
+		"MacDynamicDesktop\\MacDynamicDesktop.csproj",
+
+		"MacDynamicDesktop.Mobile\\MacDynamicDesktop.Mobile.csproj",
+
+		"MacDynamicDesktop.Wasm\\MacDynamicDesktop.Wasm.csproj",
+
+		"MacDynamicDesktop.Skia.Gtk\\MacDynamicDesktop.Skia.Gtk.csproj",
+
+		"MacDynamicDesktop.Skia.Gtk\\MacDynamicDesktop.Skia.Gtk.csproj",
+    ]
+  }
+}
