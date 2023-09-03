@@ -1,8 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacDynamicDesktop.Mobile", "MacDynamicDesktop\MacDynamicDesktop.Mobile\MacDynamicDesktop.Mobile.csproj", "{68CF5917-8EAB-4F1F-9E43-6C2437EAD4B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacDynamicDesktop", "MacDynamicDesktop\MacDynamicDesktop\MacDynamicDesktop.csproj", "{D6D7EDCC-C903-4FEF-A0B5-D9C7536E6F9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{8263A801-A38F-462D-8C6D-D1C8961FFFF7}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68CF5917-8EAB-4F1F-9E43-6C2437EAD4B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68CF5917-8EAB-4F1F-9E43-6C2437EAD4B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68CF5917-8EAB-4F1F-9E43-6C2437EAD4B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68CF5917-8EAB-4F1F-9E43-6C2437EAD4B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6D7EDCC-C903-4FEF-A0B5-D9C7536E6F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D7EDCC-C903-4FEF-A0B5-D9C7536E6F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D7EDCC-C903-4FEF-A0B5-D9C7536E6F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D7EDCC-C903-4FEF-A0B5-D9C7536E6F9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
