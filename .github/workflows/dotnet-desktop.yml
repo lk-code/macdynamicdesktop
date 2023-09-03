@@ -22,6 +22,9 @@ jobs:
         fetch-depth: 0
         
     - name: Restore dependencies
+      run: dotnet workload install maui-maccatalyst
+        
+    - name: Restore dependencies
       run: dotnet restore source/MacDynamicDesktop.Mac.sln
       
     - name: Version Visual Studio SDK projects
