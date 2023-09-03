@@ -44,7 +44,7 @@ jobs:
     - name: Publish
       shell: pwsh
       run: |
-        dotnet publish source/MacDynamicDesktop/MacDynamicDesktop.Mobile/MacDynamicDesktop.Mobile.csproj -c Debug -f net7.0-maccatalyst --no-restore -p:BuildIpa=True
+        dotnet publish source/MacDynamicDesktop/MacDynamicDesktop.Mobile/MacDynamicDesktop.Mobile.csproj -c Release -f net7.0-maccatalyst --no-restore -p:BuildIpa=True
         
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v3.1.2
