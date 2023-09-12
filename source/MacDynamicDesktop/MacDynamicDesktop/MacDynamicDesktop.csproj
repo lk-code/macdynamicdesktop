@@ -38,4 +38,10 @@
   <ItemGroup>
     <UpToDateCheckInput Include="**\*.xaml" Exclude="bin\**\*.xaml;obj\**\*.xaml" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Wallpaper\OverviewPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Wallpaper\OverviewPage.xaml" />
+  </ItemGroup>
 </Project>
